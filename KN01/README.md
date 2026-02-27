@@ -46,29 +46,29 @@
 --- 
 ### Host-System
 * **Logische Prozessoren/ CPU: 22**
-![Screenshot](images/CPU-Host.png)
+![Screenshot CPU](images/CPU-Host.png)
 * **RAM/ Arbeitsspeicher: 32 GB**
-![Screenshot](images/RAM-Host.png)
+![Screenshot RAM](images/RAM-Host.png)
 ---
 ### Einstellungen VM
 * **CPU: 2 mal 16** -> **Fehlermeldung** darf nicht mehr CPU benutzen als Host-System -> **Korrektur auf 4**
 
-![Screenshot](images/CPU-VM.png)
-![Screenshot](images/CPU-Fehler.png)
-![Screenshot](images/CPU-VM2.png)  
+![Screenshot CPU-VM](images/CPU-VM.png)
+![Screenshot Error](images/CPU-Fehler.png)
+![Screenshot CPU Korrektur](images/CPU-VM2.png)  
 <br>
 
 * **RAM: 45 GB** -> **Fehlermeldung** RAM muss unter 8 GB liegen -> **Korrektur auf 4 GB**  
 
-![Screenshot](images/RAM-VM.png)
-![Screenshot](images/RAM-Fehler.png)
-![Screenshot](images/RAM-VM2.png)  
+![Screenshot RAM-VM](images/RAM-VM.png)
+![Screenshot Error](images/RAM-Fehler.png)
+![Screenshot RAM Korrektur](images/RAM-VM2.png)  
 
 ---
 ### Überprüfen über VM-Terminal
 * Mit **Terminal-Befehl** wurde hier die CPU und RAM der VM überpüft
 
-![Screenshot](images/Terminal.png)
+![Screenshot Terminal CPU & RAM](images/Terminal.png)
 ---
 ### Wieso der VM nicht mehr RAM oder CPU zugeteilt werden darf als Host-System: 
 * **Vermutung**: Da Hypervisor Typ 2 auf dem Betriebsystem des Hosts läuft und keine echten Hardware-Ressourcen hat, kann es nur auf die Ressourcen des Host-System zugreifen weswegen diese auch nicht überschritten werden dürfen. 
