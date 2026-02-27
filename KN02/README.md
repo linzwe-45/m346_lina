@@ -7,7 +7,7 @@
 ![Screenshot Deatils Instanze KN02](images/Betriebsystem.png)
     * Diskgrösse: 8 GiB
     ![Screenshot Diskgrösse](images/Diskgrösse.png)
-    * Betriebssystem: Ubuntu - Linux
+    * Betriebssystem: Ubuntu 24.04
     ![Screenshot Betriebssystem](images/Instanze1.png)
     * Grösse des RAM: 3797 MB
     ![Screenshot RAM](images/RAM.png)
