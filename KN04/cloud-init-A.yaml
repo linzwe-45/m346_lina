@@ -1,0 +1,15 @@
+#cloud-config
+users:                      # Definiert Benutzer, die beim ersten Start erstellt werden
+  - name: ubuntu            # Erstellt einen Benutzer mit dem Namen "ubuntu"
+    groups: [users, admin]  # Fügt den Benutzer zu den Gruppen "users" und "admin" hinzu
+    shell: /bin/bash        # Setzt die Standard-Shell auf /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL  # Erlaubt sudo für alles, ohne Passwort-Abfrage
+    ssh_authorized_keys:    # Liste der erlaubten SSH-öffentlichen Schlüssel
+      - ssh-rsa AAAA... aws-key  # Öffentlicher SSH-Key, mit dem man sich anmelden darf
+
+ssh_pwauth: false           # Deaktiviert SSH-Login mit Passwort (nur Key-Login erlaubt)
+disable_root: false         # Root-Login wird NICHT deaktiviert (root bleibt aktiv)
+package_update: true        # Führt beim ersten Start ein apt update aus
+packages:                   # Liste von Paketen, die automatisch installiert werden
+  - curl                    # Installiert das Tool "curl"
+  - wget                    # Installiert das Tool "wget"

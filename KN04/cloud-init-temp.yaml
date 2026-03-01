@@ -1,0 +1,16 @@
+#cloud-config
+users:
+  - name: ubuntu
+    groups: [users, admin]
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh_authorized_keys: #LZ (Key= lina1) & PAT  
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCzxzE+QoCnDwvZwkRbq5pBF6WROznfBbV/XhcpHHxlqfNsnB1jCzeYtsccHyLCqgsFqff/OAP25QSVEeqK9FCwyjXgLTALiOatiy2gWuE87ar/2xFQDYB8qtCZQjZcOKM+Ka8kCw9xYAdtioNiCjwtU91urszKb8sqHtjKkdxFVVR8513dyYjcnqO9c5x8urK1QSt/2TzHd1l0y6x6PhCLI2M14CTSeLgIjswAKZLIzWYmxTMAnEFWaqfJMkgCjvQ9SOPaj6m02CKG8FMyavmCSEf1h3Q7YjZ/rO7z804TDYFszrAH/mNNgXX4GMrMwkxOKN93sBE9/V4yA4uOV21n aws-key
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXh9lICWqv0xmJb6+HDqk8TG/KeAajklBylQK2ftXWY3sjElPBBHONuIxLLc7xlpzXkMl64ebSu/hw698fQtB2z6DNKDRXJo4HyRl00qjtUkmCiajyBDcALlEQv2zxTxlzZJB1ecgton9nacC7Lt3BOCAzegpkv4jnafXfEU4wV/xNyyORYb4LyHjBsro5PtSvuNPJlMR9ROFknl/vo1yEQiNznUMttc2nkXXvS9iVJCm3vWIZr19fhmvfWvoyDIKcku2uegbi8dtKc7+L99kexNGqwhnTMDQqN45Q2jn8msXUPKNUGQvavw6fT5NRmyk5+dNrlKS7hM1FT58GkAa5 aws-key
+
+ssh_pwauth: false
+disable_root: false
+package_update: true
+packages:
+  - curl
+  - wget
