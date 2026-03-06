@@ -25,5 +25,18 @@
 * Cloud-init File mit öffentlichen Schlüssel LZ & PAT
     * [Yaml-File - cloud-init-Template.yaml](cloud-init-temp.yaml)
 ## Auftrag D - Installation automatisieren 
-
+### Abgabe DB Server
+* Cloud-init-db File angepasst & Instanze KN04DB erstellt
+    * Befhel in yaml : ```runcmd: sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mariadb.conf.d/50-server.cnf```
+    * ```sed``` Befehl ersetzt in der Datei diesen Wert ```bind-adress = 127.0.0.1``` durch ```bind-adress = 0.0.0.0```
+    * Bedeutet das vorher nur localhost sich verbinden darf und jetzt auch andere Server
+    ![Ubuntu Sed Befehl](images/sed-Befehl.png)
+### Abgabe Webserver
+* Funktionierende Webseiten
+![Screenshot Webseite Index](images/index2.png)
+![Screenshot Webseite Info](images/info2.png)
+![Screenshot Webseite db](images/db2.png)
+* Adminer Webseite & Zugang
+![Screenshot Webseite Adminer](images/adminer.png)
+![Screenshot Webseite Eingeloggt](images/loginAd.png)
 ---
