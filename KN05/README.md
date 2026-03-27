@@ -14,7 +14,6 @@
 * Zwei definierte IPs für Web- und DB-Instanze
     * 1) IP1 = 172.31.64.10
     * 2) IP2 = 172.31.64.20
-    * ![Screenshot Rechnung](images/rechnung.png)
 ## Auftrag B - Objekte und Instanzen erstellen
 ### Sicherheitsgruppe
 * Liste der Sicherheitsgruppen
