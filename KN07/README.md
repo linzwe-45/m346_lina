@@ -18,8 +18,10 @@
     ![Screenshot Monitoring](images/monitoring.png)
 ## Auftrag C - Erstellen Ressourcen/Objekte und CloudFormation
 * Erklärung:
-    * Was ist CloudFormation? 
-    * Was ist der Unterschied zu Cloud-Init (beides sind AUtomatisierungen)? 
+    * Was ist CloudFormation? Infrastructure as Code, komplette Cloud-Infrastruktur als Code -> erstellt und verwaltet die Ressourcen die ich will automatisch
+        * Was wird gebaut?
+    * Was ist der Unterschied zu Cloud-Init (beides sind AUtomatisierungen)? konfiguriert beim Start
+        * Wie wird es eingerichtet?
 * Screenshots der verschiednen EC2-Objekte die automatisiert wurden:
     * ![Screenshot Instanz](images/Instanz.png)
     * ![Screenshot Loadbalancer](images/loadbalancer2.png)
